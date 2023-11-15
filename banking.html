@@ -9,42 +9,57 @@
 <body>
     <header>
         <h1 class="text-5xl text-center pt-8 font-bold">You are In <span class="text-orange-600">Akil's Bank</span></h1>
-        <main>
-            <section class="p-16 text-white">
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="font-bold bg-amber-300 p-8 rounded">
-                        <h3 class="text-3xl">DEPOSIT</h3>
-                        <h5 class="text-5xl">$ <span>00</span></h5>
-                    </div>
-                    <div class=" font-bold bg-amber-600 p-8 rounded">
-                        <h3 class="text-3xl">withdraw</h3>
-                        <h5 class="text-5xl">$ <span>00</span></h5>
-                    </div>
-                    <div class=" font-bold bg-green-200 p-8 rounded">
-                        <h3 class="text-3xl">current</h3>
-                        <h5 class="text-5xl">$ <span>00</span></h5>
-                    </div>
-                </div>
-
-            </section>
-            <section>
-                <div class="grid grid-cols-2 p-16 gap-8">
-                    <div class="bg-red-200 p-8">
-                        <input type="text" placeholder="$ withdraw">
-                        <br>
-                        <button>Withdraw</button>
-                    </div>
-                    <div class="bg-lime-200 p-8">
-                        <input type="text" placeholder="$ deposit">
-                        <br>
-                        <button>deposit</button>
-                    </div>
-
-
-                </div>
-            </section>
-        </main>
+       
     </header>
+    <main>
+        <section class="p-16 text-white">
+            <div class="grid grid-cols-lg-3 gap-4">
+                <div class="font-bold bg-amber-300 p-8 rounded">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h5 class="text-5xl">$ <span id="deposit-balance">00</span></h5>
+                </div>
+                <div class=" font-bold bg-amber-600 p-8 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h5 class="text-5xl">$ <span id='withdraw-balance'>00</span></h5>
+                </div>
+                <div class=" font-bold bg-green-200 p-8 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h5 class="text-5xl">$ <span id='balance-ammount'>00</span></h5>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="grid grid-cols-lg-2 p-16 gap-8">
+                <div class="bg-lime-200 p-8">
+                    <input id="deposit-input" type="text" placeholder="$ deposit" class="px-2">
+                    <br>
+                    <button id="deposit-battu" class="bg-lime-500 px-4 py-2 mt-4 rounded text-white font-semibold">deposit</button>
+                </div>
+                <div class="bg-red-200 p-8">
+                    <input  id='withdraw-input' type="text" placeholder="$ withdraw" class="px-2">
+                    <br>
+                    <button id='withdraw-battu' class="bg-lime-500 px-4 py-2 mt-4 rounded text-white font-semibold">Withdraw</button>
+                </div>
+         
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <script src="js/banking.js"></script>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
